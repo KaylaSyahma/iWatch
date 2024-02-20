@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iWatch</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../public/output.css" />
+    <link rel="stylesheet" href="../public/vanilla.css">
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"/>
+
+    <!-- Swipper -->
+    <link rel="stylesheet" href="../public/swiper-bundle.min.css">
+  </head>
+
+  <body>
+    <!-- Header -->
+    <!-- <header class="py-8 lg:pt-6 lg:pb-14">
+      <div class="container mx-auto lg:relative flex flex-col lg:flex-row lg:justify-between gap-y-4 lg:gap-y-0">
+        Logo
+        <div class="flex justify-center lg:justify-normal">
+          <a href="">
+            <img src="../assets/Vector (6).png" alt="">
+          </a>
+        </div>
+        <div class="flex flex-col gap-y-4 lg:flex-row lg:gap-x-10 lg:gap-y-0 ">
+          Location
+          <div class="flex justify-center items-center gap-x-2 lg:justify-normal lg:hidden">
+            <i class="ri-map-pin-2-fill text-2xl text-black"></i>
+            <div class="text-secondary ">Jonggol, Dayeuh</div>
+          </div>
+          Phone
+          <div class="flex justify-center items-center gap-x-2 lg:justify-normal lg:hidden">
+            <i class="ri-phone-fill text-2xl text-black"></i>
+            <div class="text-secondary ">(+487) 384 9452</div>
+          </div>
+
+          button
+          <button class="btn btn-sm btn-black w-[250px] lg:w-auto mx-auto lg:mx-0 shadow-2xl lg:hidden transition-all duration-300 z-9">
+            Book Now 
+          </button>
+
+          Nav Mobile
+          <nav class="mnav bg-white fixed w-[300px] top-0 h-screen -left-[300px] lg:hidden">
+            <div class="mnav__close-btn bg-primary w-8 h-8 relative -right-full top-8 flex justify-center items-center rounded-tr-lg rounded-br-lg ">
+              <i class="mnav__close-btn-icon ri-arrow-right-s-line text-2xl text-white"></i>
+            </div>
+
+            logo, list, form
+            <div class="px-12 flex flex-col gap-y-12 h-full">
+              logo
+              <a href="">
+                <img src="../assets/img/header/logo.svg" alt="">
+              </a>
+              list
+              <ul class="flex flex-col gap-y-5">
+                <li>
+                  <a href="" class="text-secondary hover:text-accent transition-all duration-300">Mac</a>
+                </li>
+                <li>
+                  <a href="" class="text-secondary hover:text-accent transition-all duration-300">iPhone</a>
+                </li>
+                <li>
+                  <a href="" class="text-secondary hover:text-accent transition-all duration-300">iPad</a>
+                </li>
+                <li>
+                  <a href="" class="text-secondary hover:text-accent transition-all duration-300">iWatch</a>
+                </li>
+                <li>
+                  <a href="" class="text-secondary hover:text-accent transition-all duration-300">Support</a>
+                </li>
+                
+                
+              </ul>
+
+              form
+              <form class="relative flex gap-x-[10px]">
+                <label for="">
+                  <i class="ri-search-line text-2xl text-accent"></i>
+                </label>
+                <input type="text" id="nav-search-input" placeholder="Search..." class="outline-none w-[160px] border-b-2 focus:border-b-2 focus:border-accent placeholder:italic">
+              </form>
+            </div>
+          </nav>
+
+          dekstop nav
+          <nav class="bg-white absolute w-full left-0 -bottom-[86px] shadow-custom1 h-16 rounded-[10px] hidden lg:flex lg:items-center lg:justify-between lg:px-[50px]">
+            list
+            <ul class="flex  gap-x-4">
+              <li>
+                <a href="" class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Mac</a>
+              </li>
+              <li>
+                <a href="" class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">iPhone</a>
+              </li>
+              <li>
+                <a href="" class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">iPad</a>
+              </li>
+              <li>
+                <a href="" class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">iWatch</a>
+              </li>
+              <li>
+                <a href="" class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Support</a>
+              </li>
+              
+              <li>
+                <a href="" class="text-secondary hover:text-accent transition-all duration-300">Contact</a>
+              </li>
+            </ul>
+
+            form
+            <form class="relative flex gap-y-[10px] ">
+              <label for="search-input" class="flex justify-center items-center">
+                <i class="ri-search-line text-2xl text-gray-700"></i>
+              </label>
+              <input type="text" id="search-input" placeholder="Search..." class="outline-none w-[100px] focus:w-[180px] focus:border-b-2 focus:border-gray-700 text-2xl placeholder:italic placeholder:text-base transition-all duration-300">
+            </form>
+          </nav>
+        </div>
+
+
+      </div>
+    </header> -->
+    <header class="py-8 lg:pt-6 lg:pb-14">
+      <div class="container mx-auto lg:relative flex flex-col lg:flex-row lg:justify-between gap-y-4 lg:gap-y-0">
+        <!-- Logo -->
+        <div class="flex justify-center lg:justify-normal">
+          <a href="">
+            <img src="../assets/Vector (6).png" alt="">
+          </a>
+        </div>
+        <div class="flex flex-col gap-y-4 lg:flex-row lg:gap-x-5 lg:gap-y-0">
+          <!-- Location -->
+          <div class="w-[250px] lg:w-auto mx-auto lg:mx-0 lg:my-auto transition-all duration-300 text-[18px]">
+            <a href="register.html">Sign In</a>
+          </div>
+          
+          <div class="w-[250px] lg:w-auto mx-auto lg:mx-0 lg:my-auto transition-all duration-300 text-[18px]">
+            <a href="login.html">Sign Up</a>
+          </div>
+
+          <div class="w-[250px] lg:w-auto mx-auto lg:mx-0 lg:my-auto transition-all duration-300">
+            <i class="ri-shopping-cart-fill text-[24px]"></i>
+          </div>
+          
+
+          <!-- button -->
+          <button class="btn btn-sm btn-black w-[250px] lg:w-auto mx-auto lg:mx-0 shadow-2xl lg:hidden transition-all duration-300 z-9">
+            Book Now 
+          </button>
+
+          <!-- Nav Mobile -->
+          <nav class="mnav bg-white fixed w-[300px] top-0 h-screen -left-[300px] lg:hidden">
+            <div class="mnav__close-btn bg-primary w-8 h-8 relative -right-full top-8 flex justify-center items-center rounded-tr-lg rounded-br-lg ">
+              <i class="mnav__close-btn-icon ri-arrow-right-s-line text-2xl text-white"></i>
+            </div>
+
+            <!-- logo, list, form -->
+            <div class="px-12 flex flex-col gap-y-12 h-full">
+              <!-- logo -->
+              <a href="">
+                <img src="../assets/Vector (6).png" alt="">
+              </a>
+              <!-- list -->
+              <ul class="flex flex-col gap-y-5">
+                <li>
+                  <a href="" class="text-secondary hover:text-accent transition-all duration-300">Home</a>
+                </li>
+                <li>
+                  <a href="" class="text-secondary hover:text-accent transition-all duration-300">Doctors</a>
+                </li>
+                <li>
+                  <a href="" class="text-secondary hover:text-accent transition-all duration-300">Department</a>
+                </li>
+                <li>
+                  <a href="" class="text-secondary hover:text-accent transition-all duration-300">Services</a>
+                </li>
+                <li>
+                  <a href="" class="text-secondary hover:text-accent transition-all duration-300">Blog</a>
+                </li>
+                
+                <li>
+                  <a href="" class="text-secondary hover:text-accent transition-all duration-300">Contact</a>
+                </li>
+              </ul>
+
+              <!-- form -->
+              <form class="relative flex gap-x-[10px]">
+                <label for="">
+                  <i class="ri-search-line text-2xl text-accent"></i>
+                </label>
+                <input type="text" id="nav-search-input" placeholder="Search..." class="outline-none w-[160px] border-b-2 focus:border-b-2 focus:border-accent placeholder:italic">
+              </form>
+            </div>
+          </nav>
+
+          <!-- dekstop nav -->
+          <nav class="bg-white absolute w-full left-0 -bottom-[86px] h-16 rounded-[10px] hidden lg:flex lg:items-center lg:justify-between lg:px-[50px] shadow-custom1">
+            <!-- list -->
+            <ul class="flex  gap-x-4">
+              <li>
+                <a href="" class="border-r pr-4 text-secondary hover:text-black   transition-all duration-300">Home</a>
+              </li>
+              <li>
+                <a href="" class="border-r pr-4 text-secondary hover:text-black  transition-all duration-300">Intro</a>
+              </li>
+              <li>
+                <a href="" class="border-r pr-4 text-secondary hover:text-black  transition-all duration-300">Products</a>
+              </li>
+              <li>
+                <a href="" class="border-r pr-4 text-secondary hover:text-black  transition-all duration-300">Services</a>
+              </li>
+              <li>
+                <a href="" class="border-r pr-4 text-secondary hover:text-black  transition-all duration-300">Blog</a>
+              </li>
+              
+              <li>
+                <a href="" class="text-secondary hover:text-black transition-all duration-300">Contact</a>
+              </li>
+            </ul>
+
+            <!-- form -->
+            <form class="relative flex gap-y-[10px] ">
+              <label for="search-input" class="flex justify-center items-center">
+                <i class="ri-search-line text-2xl text-black"></i>
+              </label>
+              <input type="text" id="search-input" placeholder="Search..." class="border-none w-[100px] focus:w-[180px] focus:border-b-2 focus:  focus:border-black text-2xl placeholder:italic placeholder:text-base transition-all duration-300">
+            </form>
+          </nav>
+        </div>
+
+
+      </div>
+    </header>
+
+    
+      
+    <!-- Hero -->
+    <section class="hero bg-[#404354] py-12 xl:pt-12 xl:pb-0 overflow-hidden xl:h-[100vh]">
+      <div class="container mx-auto h-full">
+        <!-- text & img -->
+        <div class="flex flex-col xl:flex-row items-center justify-between h-full">
+          <!-- text -->
+          <div class="hero__text xl:w-[766px] text-center xl:text-left">
+            <!-- badge -->
+            <div class="flex items-center bg-white py-[10px] px-[20px] w-max gap-x-2 mb-[26px] rounded-full mx-auto xl:mx-0">
+              <!-- badge icon -->
+              <i class="ri-heart-pulse-line text-2xl text-slate-600"></i>
+                <div class="uppercase text-base font-medium text-[#9AB4B7] tracking-[2.24px]">Live Your Life</div>
+            </div>
+
+            <!-- title -->
+            <h1 class="h1 mb-6 text-white">The Perfect Moment <span class="font-normal">Between Past And Future.</span></h1>
+            <!-- desc
+            <p class="mb-[42px] md:max-w-xl">Vitae aliquam vestibulum elit adipiscing massa diam in dignissim. Risus tellus libero elementum aliquam etiam. Lectus adipiscing est auctor mi quisque nunc non viverra est.</p> -->
+            <!-- btn -->
+            <button class="btn btn-lg border-[3px] border-white hover:bg-black hover:border-none duration-300 transition-all mx-auto xl:mx-0 text-white ">Buy Now</button>
+          </div>
+
+          <!-- img -->
+          <div class="hero__img hidden xl:flex max-w-[814px] self-end">
+            <img src="../assets/Watch (1).png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero end -->
+
+    <!-- stats -->
+    <section class="stats section">
+      <div class="container mx-auto">
+        <!-- wrapper -->
+        <div class="flex flex-col xl:flex-row gap-y-6 justify-between">
+          <!-- item -->
+          <div class="stats__item flex-1 xl:border-r flex flex-col items-center">
+            <div class="text-4xl xl:text-[64px] font-semibold text-[#575757]  xl:mb-2 ">+5120</div>
+            <div>Happy Customers</div>
+          </div>
+
+          <div class="stats__item flex-1 xl:border-r flex flex-col items-center">
+            <div class="text-4xl xl:text-[64px] font-semibold text-[#575757]  xl:mb-2 ">+5120</div>
+            <div>Been Sold</div>
+          </div>
+
+          <div class="stats__item flex-1 xl:border-r flex flex-col items-center">
+            <div class="text-4xl xl:text-[64px] font-semibold text-[#575757]  xl:mb-2 ">+5120</div>
+            <div>Happy patients</div>
+          </div>
+
+          <div class="stats__item flex-1  flex flex-col items-center">
+            <div class="text-4xl xl:text-[64px] font-semibold text-[#575757]  xl:mb-2 ">+5120</div>
+            <div>Happy patients</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- stats end -->
+
+    
+
+    <!-- Desc Section -->
+  <section class="section">
+    <div class="container mx-auto flex gap-x-[50px]">
+      <div class="hidden xl:block">
+        <img src="../assets/Group 4.png" alt="">
+      </div>
+
+      <div class="max-w-[689px] my-auto text-center xl:text-left">
+        <h1 class="text-5xl mb-[54px]">Introducing the Ultimate Companion: <span class="font-bold"> iWatch</span></h1>
+        <p>The term "iWatch" is commonly used to refer to the Apple Watch, which is a line of smartwatches developed by Apple Inc. The Apple Watch incorporates fitness tracking, health-oriented capabilities, wireless communication, and integration with iOS devices and other Apple products and services. It allows users to make calls, send messages, track their fitness activities, receive notifications, and access various apps directly from their wrist.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- produk -->
+  <section class="text-center lg:text-left lg:px-[10%]">
+    <div>
+      <div class=" flex flex-col lg:flex-row justify-between mb-[40px] gap-y-[10px]">
+        <h2 class="h2">Related Products</h2>
+        <a href="product.html"><button class="text-black border-2 px-[40px] py-[10px] border-black hover:bg-black hover:text-white transition-all duration-300" type="button">View All Products</button></a>
+      </div>
+  
+      <div class="flex flex-col lg:flex-row gap-y-[30px]">
+        <div class="w-[304px] px-[25px] border-2 border-[#C1C1C1] text-center py-[20px] mx-auto">
+          <img src="../assets/appleWatchseries.png" alt="" class="mx-auto mb-[20px]">
+          <h3 class="mb-[11px]">Apple Watch Series 9</h3>
+          <p class="text-black">Rp 6.499.000</p>
+          <p class="text-red-500 mb-[30px]"><span class="line-through text-secondary">Rp 7.999.000 </span>[18%]</p>
+          <button class="px-[50px] py-[2px] border-2 border-slate-600 text-black hover:bg-slate-600 hover:text-white transition-all duration-300">Detail</button>
+        </div>
+        
+        <div class="w-[304px] px-[25px] border-2 border-[#C1C1C1] text-center py-[20px] mx-auto">
+          <img src="../assets/ultra 2.png" alt="" class="mx-auto mb-[20px]">
+          <h3 class="mb-[11px]">Apple Watch Ultra 2</h3>
+          <p class="text-black">Rp 15.999.000</p>
+          <p class="text-red-500 mb-[30px]"><span class="line-through text-secondary">Rp 16.999.000 </span>[10%]</p>
+          <button class="px-[50px] py-[2px] border-2 border-slate-600 text-black hover:bg-slate-600 hover:text-white transition-all duration-300">Detail</button>
+        </div>
+  
+        <div class="w-[304px] px-[25px] border-2 border-[#C1C1C1] text-center py-[20px] mx-auto">
+          <img src="../assets/nike.png" alt="" class="mx-auto mb-[20px]">
+          <h3 class="mb-[11px]">Apple Watch Nike</h3>
+          <p class="text-black">Rp 3.499.000</p>
+          <p class="text-red-500 mb-[30px]"><span class="line-through text-secondary">Rp 4.199.000  </span>[16%]</p>
+          <button class="px-[50px] py-[2px] border-2 border-slate-600 text-black hover:bg-slate-600 hover:text-white transition-all duration-300">Detail</button>
+        </div>
+  
+        <div class="w-[304px] px-[25px] border-2 border-[#C1C1C1] text-center py-[20px] mx-auto">
+          <img src="../assets/ultra.png" alt="" class="mx-auto mb-[20px]">
+          <h3 class="mb-[11px]">Apple Watch Ultra</h3>
+          <p class="text-black">Rp 6.499.000</p>
+          <p class="text-red-500 mb-[30px]"><span class="line-through text-secondary">Rp 7.999.000 </span>[18%]</p>
+          <button class="px-[50px] py-[2px] border-2 border-slate-600 text-black hover:bg-slate-600 hover:text-white transition-all duration-300">Detail</button>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  <!-- produk end -->
+    <!-- Desc end -->
+    <div class="container bg-black mx-auto mt-[100px] max-w-[100%] px-[100px] py-[10px]">
+      <div class="lg:flex gap-x-[48px] mx-auto">
+        <div class="flex gap-x-[20px] mb-[2rem] lg:mb-0 justify-center">
+          <div class="my-auto">
+            <img src="../assets/secure.png" alt="">
+          </div>
+
+          <div class="text-white">
+            <h4 class="text-white font-bold text-base">Garansi Resmi</h4>
+            <p class="leading-normal mt-[5px] text-sm">Produk Bergaransi Resmi / Garansi TAM</p>
+          </div>
+        </div>
+
+        <div class="flex gap-x-[20px] mb-[2rem] lg:mb-0 justify-center">
+          <div class="my-auto">
+            <img src="../assets/service.png" alt="">
+          </div>
+
+          <div class="text-white">
+            <h4 class="text-white font-bold text-base">Layanan Pelanggan</h4>
+            <p class="leading-normal mt-[5px] text-sm">Tim Kami Siap Membantu Seputar Produk</p>
+          </div>
+        </div>
+
+        <div class="flex gap-x-[20px] mb-[2rem] lg:mb-0 justify-center">
+          <div class="my-auto">
+            <img src="../assets/kirim.png" alt="">
+          </div>
+
+          <div class="text-white">
+            <h4 class="text-white font-bold text-base">Jasa Pengiriman</h4>
+            <p class="leading-normal mt-[5px] text-sm">Pengiriman dan Keamanan Terpercaya</p>
+          </div>
+        </div>
+
+        <div class="flex gap-x-[20px] justify-center">
+          <div class="my-auto">
+            <img src="../assets/diskon.png" alt="">
+          </div>
+
+          <div class="text-white">
+            <h4 class="text-white font-bold text-base">Keuntungan Belanja</h4>
+            <p class="leading-normal mt-[5px] text-sm">Promo dan Info Terkini Produk Gadget Terbaru</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- reward -->
+    <section class="reward px-[22%]">
+      <div class="bg-[#F1F1F1] mx-auto flex px-[52px] py-[46px] shadow-custom3 mt-[4rem]">
+        <div>
+          <img src="../assets/apple.png" alt="">
+        </div>
+  
+        <div class="text-center mx-auto my-auto">
+          <h1 class="font-semibold text-[39px] mb-[17px]">Wonder Awaits</h1>
+          <p class="font-normal text-[15px] text-black w-[288px] leading-[22px] mb-[45px]">Give the gifts the’ve been looking forward to all years</p>
+          <a href="" class="text-[#0062BC]">Learn More ></a>
+        </div>
+      </div>
+
+      <div class="mt-[52px] flex gap-x-[62px]">
+        <div class="text-center px-[64px] w-[430px]  bg-[#FAFAFA] shadow-custom3">
+          <h2 class="font-semibold text-black text-[26px] pt-[35px] mb-[10px]">Get 3% Daily Cash back with Apple Card</h2>
+          <p class="leading-[22px]">And pay over time, interest-free when you choose to check out with Apple Card Monthly Installments</p>
+          <a href="" class="text-[#0062BC]">Learn More ></a>
+          <img src="../assets/app-card.png" alt="" class="mx-auto">
+        </div>
+        <div class="text-center px-[64px] w-[430px]  bg-[#FAFAFA] shadow-custom3">
+          <h2 class="font-semibold text-black text-[26px] pt-[35px] mb-[10px]">Get 3% Daily Cash back with Apple Card</h2>
+          <p class="leading-[22px]">And pay over time, interest-free when you choose to check out with Apple Card Monthly Installments</p>
+          <a href="" class="text-[#0062BC]">Learn More ></a>
+          <img src="../assets/app-card.png" alt="" class="mx-auto">
+        </div>
+
+        
+      </div>
+
+    </section>
+    <!-- reward end -->
+    <!-- appoinment -->
+    <section class="appoinment section">
+      <div class="container mx-auto">
+        <!-- title -->
+        <h2 class="appoinment__title h2 text-center xl:text-left xl:mb-[50px] mb-5">Order Now!</h2>
+
+        <!-- form -->
+        <form class="appoinment__form flex flex-col gap-y-5">
+          <!-- select wrapper -->
+          <div class="flex flex-col xl:flex-row gap-5">
+            <!-- select 1 -->
+            <div class="select relative flex items-center">
+              <!-- icon -->
+              <!-- <div class="absolute right-4">
+                <i class="ri-arrow-down-s-line text-[26px] text-primary"></i>
+              </div> -->
+              <!-- select -->
+              <select class="appearance-none outline-none h-full  bg-transparent w-full px-4">
+                <option value="1">Select Series</option>
+                <option value="2">Apple Watch Series 9</option>
+                <option value="3">Apple Watch Series 3</option>
+                <option value="4">Apple Watch Series Ultra</option>
+              </select>
+            </div>
+            <!-- select 2 -->
+            <div class="select relative flex items-center">
+              <!-- icon -->
+              <!-- <div class="absolute right-4">
+                <i class="ri-arrow-down-s-line text-[26px] text-primary"></i>
+              </div> -->
+              <!-- select -->
+              <select class="appearance-none outline-none h-full  bg-transparent w-full px-4">
+                <option value="1">Select Band</option>
+                <option value="2">Ocean Band</option>
+                <option value="3">Alpine Loop</option>
+                <option value="4">Trail Loop</option>
+              </select>
+            </div>
+          </div>
+          <!-- input wrapper -->
+          <div class="flex flex-col xl:flex-row gap-5">
+            <input type="text" class="input" placeholder="Full Name">
+            <input type="text" class="input" placeholder="Phone Number">
+          </div>
+
+          <!-- input wrapper -->
+          <div class="flex flex-col xl:flex-row gap-5">
+            <input type="date" class="input" placeholder="Choose Date">
+            <input type="time" class="input" placeholder="Choose Time">
+          </div>
+
+          <button class="btn btn-lg btn-black self-start" type="submit">Order</button>
+        </form>
+      </div>
+    </section>
+    <!-- end appoinment -->
+
+    <div class="overflow-hidden">
+      <div class="flex h-[40px] animate-infinite-scroll">
+        <img src="../assets/slide.png" alt="">
+      <img src="../assets/slide.png" alt="">
+      <img src="../assets/slide.png" alt="">
+      </div>
+    </div>
+
+  <footer class="container mx-auto py-12">
+    <div class="flex justify-between">
+      <!-- insove -->
+      <div>
+        <img src="../assets/foot.png" alt="" class="mb-[35px]">
+      </div>
+
+      <div class="my-auto">© 2023 iWatch by Kay. All Right Reserved</div>
+    </div>
+  </footer>
+  
+
+    <!-- Script Swipper -->
+    <script src="swiper-bundle.min.js"></script>
+
+    <!-- My Script -->
+    <script src="main.js"></script>
+    
+    <!-- Script Scroll Reveal -->
+    <script src="scrollreveal.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../public/output.css" />
+    <link rel="stylesheet" href="../public/vanilla.css">
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+    
+    <section class="py-[9%] px-[2rem] md:py-[3%]">
+        <div class="lg:flex lg:justify-center lg:gap-x-[114px]">
+            <div class="hidden lg:flex">
+                <img src="../assets/create.svg" alt="">
+            </div>
+            <div class="border-2 border-[#454545] px-[50px] py-[45px] md:w-[569px]">
+                <h2 class="h2 text-center mb-[40px]">Create an Account</h2>
+                <form class="max-w-md mx-auto mb-[40px]">
+                    <div class="relative z-0 w-full mb-5 group">
+                        <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600  focus:outline-none focus:ring-0 focus:border-black peer" placeholder=" " required />
+                        <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-black peer-focus:dark:text-black peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+                    </div>
+                    <div class="relative z-0 w-full mb-5 group">
+                        <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600  focus:outline-none focus:ring-0 focus:border-black peer" placeholder=" " required />
+                        <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-black peer-focus:dark:text-black peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Password</label>
+                    </div>
+                    <div class="relative z-0 w-full mb-5 group">
+                        <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600  focus:outline-none focus:ring-0 focus:border-black peer" placeholder=" " required />
+                        <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-black peer-focus:dark:text-black peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Confirm Password</label>
+                    </div>
+                    
+                  </form>
+                  <p class="text-center clear-start mb-[21px] text-black">Already have an account? <a href="register.html" class="text-blue-600">Log In</a></p>
+                  <button class="bg-[#454545] px-[66px] text-center text-white rounded-[19px] py-[12px] flex mx-auto hover:bg-black transition-all duration-300">Create Account</button>
+    
+                  <div class="mt-6 grid grid-cols-3 items-center text-secondary">
+                    <hr class="border-gray-400">
+                    <p class="text-center text-sm text-[17px]">Or</p>
+                    <hr class="border-gray-400">
+                  </div>
+    
+                  <div class="flex py-[12px] border-2 text-center border-[#4B4B4B] mt-[30px] justify-center gap-x-[20px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25px"  preserveAspectRatio="xMidYMid" viewBox="0 0 256 262" id="google"><path fill="#4285F4" d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027"></path><path fill="#34A853" d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1"></path><path fill="#FBBC05" d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782"></path><path fill="#EB4335" d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251"></path></svg>
+                    <p class="text-black">Sign Up with Google</p>
+                  </div>
+                  <div class="flex py-[12px] border-2 text-center border-[#4B4B4B] mt-[10px] justify-center gap-x-[20px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="facebook" width="25px"><path fill="#1976D2" d="M14 0H2C.897 0 0 .897 0 2v12c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V2c0-1.103-.897-2-2-2z"></path><path fill="#FAFAFA" fill-rule="evenodd" d="M13.5 8H11V6c0-.552.448-.5 1-.5h1V3h-2a3 3 0 0 0-3 3v2H6v2.5h2V16h3v-5.5h1.5l1-2.5z" clip-rule="evenodd"></path></svg>
+                    <p class="text-black">Sign Up with Facebook</p>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- My Script -->
+    <script src="main.js"></script>
+    
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <!-- Script Scroll Reveal -->
+    <script src="scrollreveal.min.js"></script>
+</body>
+</html>

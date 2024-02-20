@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../public/output.css" />
+    <link rel="stylesheet" href="../public/vanilla.css">
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"/>
+
+    <!-- Swipper -->
+    <link rel="stylesheet" href="../public/swiper-bundle.min.css">
+
+    <style>
+        .swiper-slide {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+        /* .swiper {
+            width: 50%;
+        } */
+    </style>
+</head>
+<body>
+    <header class="hidden lg:flex bg-black">
+        <img src="../assets/apelputih.png" alt="">
+    </header>
+    
+    <section class="py-[4%] lg:px-[5rem] lg:py-[10%] ">
+        <div class="lg:flex">
+            <div class="mb-[3rem] lg:flex-1 lg:my-auto">
+                <h1 class="text-[35px] text-center lg:text-left lg:text-[50px] font-semibold text-[#48566B] lg:font-normal lg:w-[322px]">Apple Watch Series 9</h1>
+            </div>
+    
+            <div class="swiper mySwiper lg:w-[50%] lg:flex-1">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="../assets/slider1.svg" alt="" class="lg:h-[500px]"></div>
+                  <div class="swiper-slide"><img src="../assets/slider2.svg" alt="" class="lg:h-[500px]"></div>
+                  <div class="swiper-slide"><img src="../assets/slider3.svg" alt="" class="lg:h-[500px]"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+    
+            <div class="text-center lg:text-left mt-[3rem] lg:flex-1 lg:my-auto lg:pl-[100px]">
+                <h3 class="lg:text-[20px]">Apple Watch Series 9 helps you stay connected, active, healthy, and safe. It features double-tap gestures, a special way to interact with Apple Watch,1 and an even brighter display.</h3>
+                <div class="flex bg-[#415674] items-center justify-center text-white py-[12px] w-[266px] mx-auto mt-[40px] lg:w-full">
+                    Shop Now 
+                    <img src="../assets/bulat.png" alt="" class="mr-[16px] ml-[16px]">
+                    $39.99
+                </div>
+                <p class="text-black text-[14px] leading-4 w-[266px] mx-auto mt-[10px] lg:w-full lg:text-[14px]">Free US shopping. International flat-rate. Skip or cancel any time. 30 day risk-free guarantee</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+</body>
+</html>
